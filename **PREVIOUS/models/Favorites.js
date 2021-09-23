@@ -1,7 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Favorites extends Model { }
+
+class Favorites extends Model {}
 
 Favorites.init(
     {
@@ -14,11 +15,12 @@ Favorites.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        //TODO: Add more fields??? 
+        //Possible hooks???
     },
     {
         sequelize,
         freezeTableName: true,
-        underscored: true,
         modelName: 'favorites'
     },
 );

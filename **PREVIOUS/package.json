@@ -1,0 +1,35 @@
+{
+  "name": "trails-app",
+  "version": "1.0.0",
+  "description": "## Description Trails or Fails aims to be the best trail app for the user, by the user. By providing our users with the most useful trail information, we aim to be the first resource for their next adventure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bleufox/trails-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bleufox/trails-app/issues"
+  },
+  "homepage": "https://github.com/bleufox/trails-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fs": "0.0.1-security",
+    "install": "^0.13.0",
+    "mysql2": "^2.3.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "path": "^0.12.7",
+    "sequelize": "^6.6.5",
+    "session": "^0.1.0",
+    "startbootstrap-landing-page": "^6.0.3"
+  }
+}
