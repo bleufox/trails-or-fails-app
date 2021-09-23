@@ -9,6 +9,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+const http = require('http');
+const server = http.Server(app);
+
 app.use(express.json());
 app.use(router);
 app.use(express.static('public'));
