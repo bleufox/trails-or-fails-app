@@ -1,8 +1,8 @@
 {
   "name": "trails-or-fails-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Trails or Fails aims to be the best trail app for the user, by the user. By providing our users with the most useful trail information, we aim to be the first resource for their next adventure.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

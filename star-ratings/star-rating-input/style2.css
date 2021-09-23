@@ -1,0 +1,27 @@
+
+
+.stars {
+    display: flex;
+}
+
+.stars a {
+    opacity: 35%;
+    cursor: pointer; 
+    padding:3px; 
+}
+
+.stars:hover a {
+    opacity: 100%;
+}
+
+.stars a:hover {
+    opacity: 100%
+}
+
+.stars a:hover ~ a {
+ opacity: 50%;
+}
+
+.stars a.active {
+    opacity: 100%;
+} 
