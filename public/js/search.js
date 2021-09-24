@@ -1,5 +1,4 @@
 const city = document.getElementById("cityInput")
-// const citySearch = document.getElementById('citySearch')
 const searchBtn = document.getElementById('searchBtn');
 const trailItem = document.getElementById('trailItem');
 const trailList = document.getElementById('trailList');
@@ -35,9 +34,9 @@ function citySearch() {
 
                 const resultTwo = document.getElementById('resultTwo');
                 resultTwo.textContent = data.places[1].name
-                const resultTwoCity = document.getElementById('resultOneCity');
+                const resultTwoCity = document.getElementById('resultTwoCity');
                 resultTwoCity.textContent = data.places[1].city
-                const resultTwoDirections = document.getElementById('resultOneDirections');
+                const resultTwoDirections = document.getElementById('resultTwoDirections');
                 resultTwoDirections.textContent = data.places[1].directions
 
                 const resultThree = document.getElementById('resultThree');
@@ -67,4 +66,6 @@ function citySearch() {
                 resultSixCity.textContent = data.places[5].city
                 const resultSixDirections = document.getElementById('resultSixDirections');
                 resultSixDirections.textContent = data.places[5].directions
-            }})}
+            }
+        })
+    }
