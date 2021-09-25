@@ -267,12 +267,12 @@ body {
     font-size: 56px;
     font-weight: 700;
     line-height: 72px;
-    color: #124265;
+    color: #444444;
     font-family: "Poppins", sans-serif;
   }
   
   #hero h2 {
-    color: #5e5e5e;
+    color: #444444;
     margin: 10px 0 0 0;
     font-size: 22px;
   }
@@ -303,8 +303,7 @@ body {
     padding: 15px 15px;
     position: relative;
     overflow: hidden;
-    background: #47798C;
-    background: linear-gradient(0deg,  rgba(51, 51, 51, 1) 0%, rgba(240, 227, 215, 1) 100%);
+    background: #F0E3D7;
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     z-index: 1;
@@ -379,10 +378,6 @@ body {
   section {
     padding: 80px 0;
     overflow: hidden;
-  }
-  
-  .section-bg {
-    background-color: #47798C;
   }
   
   .section-title {
@@ -532,78 +527,6 @@ body {
   .services .icon-box:hover {
     border-color: #F0E3D7;
     box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-  }
-  
-  .services .iconbox-blue i {
-    color: #47aeff;
-  }
-  
-  .services .iconbox-blue:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-blue:hover .icon path {
-    fill: #47aeff;
-  }
-  
-  .services .iconbox-orange i {
-    color: #ffa76e;
-  }
-  
-  .services .iconbox-orange:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-orange:hover .icon path {
-    fill: #ffa76e;
-  }
-  
-  .services .iconbox-pink i {
-    color: #e80368;
-  }
-  
-  .services .iconbox-pink:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-pink:hover .icon path {
-    fill: #e80368;
-  }
-  
-  .services .iconbox-yellow i {
-    color: #ffbb2c;
-  }
-  
-  .services .iconbox-yellow:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-yellow:hover .icon path {
-    fill: #ffbb2c;
-  }
-  
-  .services .iconbox-red i {
-    color: #ff5828;
-  }
-  
-  .services .iconbox-red:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-red:hover .icon path {
-    fill: #ff5828;
-  }
-  
-  .services .iconbox-teal i {
-    color: #11dbcf;
-  }
-  
-  .services .iconbox-teal:hover .icon i {
-    color: #F0E3D7;
-  }
-  
-  .services .iconbox-teal:hover .icon path {
-    fill: #11dbcf;
   }
   
   /*--------------------------------------------------------------
