@@ -42,69 +42,7 @@ body {
   form {
     display: block;
   }
-  
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
-  .back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: #47798C;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    transition: all 0.4s;
-  }
-  
-  .back-to-top i {
-    font-size: 28px;
-    color: #F0E3D7;
-    line-height: 0;
-  }
-  
-  .back-to-top:hover {
-    background: #47798C;
-    color: #F0E3D7;
-  }
-  
-  .back-to-top.active {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .icons {
-    height:35px;
-    text-align: center;
-  }
-  
-  .map {
-    border: #111 solid 1px;
-    border-radius: 10px;
-  }
-  
-  .btnSubmit {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    padding: 14px 50px;
-    border-radius: 5px;
-    transition: 0.5s;
-    margin-top: 30px;
-    color: #333333;
-    border: 1px solid #333333;
-  }
-  
-  .btnSubmit:hover {
-    background: #D2AC89;
-  }
-  
-  
+    
   /*--------------------------------------------------------------
   # Star Ratings
   --------------------------------------------------------------*/
@@ -200,53 +138,12 @@ body {
       transition-delay: 0 !important;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
-  #header {
-    transition: all 0.5s;
-    background: #F0E3D7;
-    z-index: 997;
-    padding: 15px 0;
-    border-bottom: 1px solid #e6f2fb;
-  }
-  
-  #header.header-scrolled {
-    border-color: #F0E3D7;
-    box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
-  }
-  
-  #header .logo {
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  #header .logo a {
-    color: #16507b;
-  }
-  
-  #header .logo img {
-    max-height: 40px;
-  }
-  
-  @media (max-width: 992px) {
-    #header .logo {
-      font-size: 28px;
-    }
-  }
-  
   /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: 65vh;
+    height: 80vh;
     position: relative;
     background: url('https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80') top center;
     background-size: cover;
@@ -385,11 +282,6 @@ body {
   /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
-  section {
-    padding: 25px 0;
-    overflow: hidden;
-  }
-  
   .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -480,72 +372,7 @@ body {
     color: #F0E3D7;
     text-decoration: none;
   }
-  
-  
-  /*--------------------------------------------------------------
-  # Services
-  --------------------------------------------------------------*/
-  .services .icon-box {
-    text-align: center;
-    padding: 70px 20px 80px 20px;
-    transition: all ease-in-out 0.4s;
-    background: #F0E3D7;
-  }
-  
-  .services .icon-box .icon {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-in-out 0.3s;
-    position: relative;
-  }
-  
-  .services .icon-box .icon i {
-    font-size: 36px;
-    transition: 0.5s;
-    position: relative;
-  }
-  
-  .services .icon-box .icon svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .services .icon-box .icon svg path {
-    transition: 0.5s;
-    fill: #f5f5f5;
-  }
-  
-  .services .icon-box h4 {
-    font-weight: 600;
-    margin: 10px 0 15px 0;
-    font-size: 22px;
-  }
-  
-  .services .icon-box h4 a {
-    color: #124265;
-    transition: ease-in-out 0.3s;
-  }
-  
-  .services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  #icon h2 {
-    padding-top: 50px;
-  }
-  
-  .services .icon-box:hover {
-    border-color: #F0E3D7;
-    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-  }
-  
+    
   /*--------------------------------------------------------------
   # Cta
   --------------------------------------------------------------*/
