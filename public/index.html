@@ -25,6 +25,7 @@
         rel="stylesheet">
 
     <!-- CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -54,9 +55,17 @@
         </div>
         </div>
     </section>
-<!-- ====== END OF HERO ====== -->
+    <!-- ====== END OF HERO ====== -->
 
-<!-- ====== START OF RECOMMENDED TRAILS ====== -->
+    <!-- ====== START OF RECOMMENDED TRAILS ====== -->
+
+    <section id="cta" class="cta section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Recommended Trails</h2>
+            </div>
+    </section>
+
     <section id="cta" class="cta">
         <div class="container" data-aos="fade-up">
             <div class="text-center">
@@ -64,20 +73,18 @@
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
                         data-aos-delay="300">
-                        <div class="icon-box">
+                        <div id="trail-info" class="icon-box">
                             <div class="icon">
                                 <img src="images/hiking.png" alt="" style="width: 75px">
                             </div>
-                            <h2 id="resultOne"></h2>
-                            <h4 id="resultOneCity"></h4>
-                            <p id="resultOneDirections"></p>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                    data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon">
+                        data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon">
                                 <img src="images/backpack.png" alt="" style="width: 75px">
                             </div>
                             <h2 id="resultTwo"></h2>
@@ -139,103 +146,98 @@
         </div>
         </div>
     </section>
-    <!-- End HERO -->
 
+    <!-- ======= Trails on Demand Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
 
-    <main id="main">
-
-        <!-- ======= Trails on Demand Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h3>Trails on Demand</h3>
-                    <p>No matter where you are, we've got you covered. This map will keep you informed of the trails
-                        closest to you in real time.</p>
-                </div>
-                <div class="map-border" data-aos="fade-right" data-aos-delay="100">
-                    <div class="map" id='map' style='width: auto; height: 400px;'></div>
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1IjoiY2VkYXJoYWx2b3Jzb24iLCJhIjoiY2tzZHY1anlsMHVkcTJ0bzI0NzU1Z2FmMCJ9.5523rDcsb_V3eRU7jnW_rw';
-                        var map = new mapboxgl.Map({
-                            container: 'map',
-                            style: 'mapbox://styles/mapbox/streets-v11'
-                        });
-                    </script>
-                </div>
+            <div class="section-title">
+                <h3>Trails on Demand</h3>
+                <p>No matter where you are, we've got you covered. This map will keep you informed of the trails
+                    closest to you in real time.</p>
             </div>
-        </section><!-- End About Section -->
+            <div class="map-border" data-aos="fade-right" data-aos-delay="100">
+                <div class="map" id='map' style='width: auto; height: 400px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiY2VkYXJoYWx2b3Jzb24iLCJhIjoiY2tzZHY1anlsMHVkcTJ0bzI0NzU1Z2FmMCJ9.5523rDcsb_V3eRU7jnW_rw';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11'
+                    });
+                </script>
+            </div>
+        </div>
+    </section><!-- End About Section -->
 
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
 
-            <div class="container text-center">
-                <div class="credits">
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-                            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-                </div>
-        </footer>
-        <!-- End Footer -->
+        <div class="container text-center">
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+    </footer>
+    <!-- End Footer -->
 
-        <!-- Vendor JS Files -->
-        <script src="/vendor/aos/aos.js"></script>
-        <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="/vendor/php-email-form/validate.js"></script>
-        <script src="/vendor/purecounter/purecounter.js"></script>
-        <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="/vendor/aos/aos.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/vendor/php-email-form/validate.js"></script>
+    <script src="/vendor/purecounter/purecounter.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
 
-        <!-- City Search JS-->
-        <script src="js/search.js"></script>
+    <!-- City Search JS-->
+    <script src="js/search.js"></script>
 
-        <!-- Template Main JS File -->
-        <script src="js/main.js"></script>
-        <script src="/trails/trails.js"></script>
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
 
-        <!-- Bootstrap -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-        <!-- Star Ratings -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Star Ratings -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-        <script>
+    <script>
 
-            // MAPBOX
-            mapboxgl.accessToken = 'pk.eyJ1IjoiY2VkYXJoYWx2b3Jzb24iLCJhIjoiY2tzZHY1anlsMHVkcTJ0bzI0NzU1Z2FmMCJ9.5523rDcsb_V3eRU7jnW_rw';
+        // MAPBOX
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2VkYXJoYWx2b3Jzb24iLCJhIjoiY2tzZHY1anlsMHVkcTJ0bzI0NzU1Z2FmMCJ9.5523rDcsb_V3eRU7jnW_rw';
 
-            navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
-                enableHighAccuracy: true
-            });
+        navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
+            enableHighAccuracy: true
+        });
 
-            function successLocation(position) {
-                console.log(position)
-                setupMap([position.coords.longitude, position.coords.latitude])
-            }
+        function successLocation(position) {
+            console.log(position)
+            setupMap([position.coords.longitude, position.coords.latitude])
+        }
 
-            function errorLocation() {
-                setupMap([0.00, 0.00])
-            }
+        function errorLocation() {
+            setupMap([0.00, 0.00])
+        }
 
-            function setupMap(center) {
-                let map = new mapboxgl.Map({
-                    container: "map",
-                    style: "mapbox://styles/mapbox/streets-v11",
-                    center: center,
-                    zoom: 12
-                })
-                map.addControl(new mapboxgl.NavigationControl());
+        function setupMap(center) {
+            let map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: center,
+                zoom: 12
+            })
+            map.addControl(new mapboxgl.NavigationControl());
 
-                var directions = new MapboxDirections({
-                    accessToken: mapboxgl.accessToken
-                })
-                map.addControl(directions, 'top-left');
-            }
-        </script>
+            var directions = new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+            })
+            map.addControl(directions, 'top-left');
+        }
+    </script>
 
 </body>
 

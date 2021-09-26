@@ -1,9 +1,6 @@
 const city = document.getElementById("cityInput")
 const searchBtn = document.getElementById('searchBtn');
-const trailItem = document.getElementById('trailItem');
-const trailList = document.getElementById('trailList');
-const trailInfo = document.getElementById('trail-info');
-const form = document.getElementById('searchForm');
+
 
 //get trails by location
 function citySearch() {
@@ -21,51 +18,63 @@ function citySearch() {
             return response.json();
         })
         .then(function (data) {
+            console.log(data)
+
             if (data.places.length > 0) {
+                const trail = data.places[0].activities[0]
 
-                console.log(data);
+                const trailInfo = document.getElementById('trail-info');
+                const trailOneName = document.createElement('h2');
+                const trailName = (trail.name)
+                trailOneName.textContent = trailName
+                trailInfo.appendChild(trailOneName)
+                const trailOneActivities = document.createElement('h4');
+                trailOneActivities.textContent = (trail.activity_type_name)
+                trailInfo.appendChild(trailOneActivities)
+                const trailImage = document.createElement('img')
+                trailImage.style.width = "100%"
+                trailImage.src = trail.thumbnail
+                trailInfo.appendChild(trailImage)
+                const trailOneCity = document.createElement('h6');
+                trailOneCity.textContent = data.places[0].city
+                trailInfo.appendChild(trailOneCity)
+                const trailOneDescription = document.createElement('p');
+                trailOneDescription.textContent = (trail.description)
+                trailInfo.appendChild(trailOneDescription)
+                const trailOneLength = document.createElement('h6');
+                trailOneLength.textContent = (trail.length + ' miles')
+                trailInfo.appendChild(trailOneLength)
+                const trailRating = document.createElement('p')
+                const currentRating = trail.rating
+                trailRating.textContent = currentRating
 
-                const resultOne = document.getElementById('resultOne');
-                resultOne.textContent = data.places[0].name
-                const resultOneCity = document.getElementById('resultOneCity');
-                resultOneCity.textContent = data.places[0].city
-                const resultOneDirections = document.getElementById('resultOneDirections');
-                resultOneDirections.textContent = data.places[0].directions
+                const ratingObject = {}
+                ratingObject[trailName] = currentRating
 
-                const resultTwo = document.getElementById('resultTwo');
-                resultTwo.textContent = data.places[1].name
-                const resultTwoCity = document.getElementById('resultTwoCity');
-                resultTwoCity.textContent = data.places[1].city
-                const resultTwoDirections = document.getElementById('resultTwoDirections');
-                resultTwoDirections.textContent = data.places[1].directions
+                const outerStarDiv = document.createElement('div')
+                outerStarDiv.classList.add('stars-outer')
+                const innerStarDiv = document.createElement('div')
+                innerStarDiv.classList.add('stars-inner')
+                outerStarDiv.appendChild(innerStarDiv)
+                const numberRatingSpan = document.createElement('span')
+                numberRatingSpan.classList.add('number-rating')
+                innerStarDiv.style.width = getRatings(ratingObject)
 
-                const resultThree = document.getElementById('resultThree');
-                resultThree.textContent = data.places[2].name
-                const resultThreeCity = document.getElementById('resultThreeCity');
-                resultThreeCity.textContent = data.places[2].city
-                const resultThreeDirections = document.getElementById('resultThreeDirections');
-                resultThreeDirections.textContent = data.places[2].directions
-
-                const resultFour = document.getElementById('resultFour');
-                resultFour.textContent = data.places[3].name
-                const resultFourCity = document.getElementById('resultFourCity');
-                resultFourCity.textContent = data.places[3].city
-                const resultFourDirections = document.getElementById('resultFourDirections');
-                resultFourDirections.textContent = data.places[3].directions
-
-                const resultFive = document.getElementById('resultFive');
-                resultFive.textContent = data.places[4].name
-                const resultFiveCity = document.getElementById('resultFiveCity');
-                resultFiveCity.textContent = data.places[4].city
-                const resultFiveDirections = document.getElementById('resultFiveDirections');
-                resultFiveDirections.textContent = data.places[4].directions
-
-                const resultSix = document.getElementById('resultSix');
-                resultSix.textContent = data.places[5].name
-                const resultSixCity = document.getElementById('resultSixCity');
-                resultSixCity.textContent = data.places[5].city
-                const resultSixDirections = document.getElementById('resultSixDirections');
-                resultSixDirections.textContent = data.places[5].directions
+                trailInfo.appendChild(outerStarDiv)
+                trailInfo.appendChild(numberRatingSpan)  
             }
         })
+}
+
+const starsTotal = 5;
+console.log('run')
+//get ratings
+function getRatings(ratings) {
+    for (let rating in ratings) {
+        const starPercentage = (ratings[rating] /
+            starsTotal) * 100;
+        const starPercentageRounded = `${Math.round
+            (starPercentage / 5) * 5}%`;
+        return starPercentageRounded;
     }
+}

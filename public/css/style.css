@@ -23,13 +23,15 @@ body {
     text-decoration: none;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h5, h6 {
     font-family: "Raleway", sans-serif;
   }
   
-  h4 {
+  #trail-info h4 {
     font-family: "Raleway", sans-serif;
     text-align: center;
+    text-transform:uppercase;
+    color: #444444;
   }
   
   p{
@@ -313,6 +315,10 @@ body {
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     z-index: 1;
+  }
+
+  #icon-box {
+    color: #F0E3D7;
   }
   
   #hero .icon-box .title {
