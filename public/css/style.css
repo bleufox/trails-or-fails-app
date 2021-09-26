@@ -308,12 +308,11 @@ body {
     width: 500px;
     position: relative;
     overflow: hidden;
-    background: #F0E3D7;
+    background: #CC5500;
+    color: #000000;
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     z-index: 1;
-    border: 1px solid #8888888;
-    opacity: .85;
   }
   
   #hero .icon-box .title {
@@ -335,7 +334,7 @@ body {
   
   #hero .icon-box .icon {
     margin-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 25px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
     font-size: 36px;
@@ -531,6 +530,10 @@ body {
     font-size: 14px;
     margin-bottom: 0;
   }
+
+  #icon h2 {
+    padding-top: 50px;
+  }
   
   .services .icon-box:hover {
     border-color: #F0E3D7;
@@ -541,16 +544,17 @@ body {
   # Cta
   --------------------------------------------------------------*/
   .cta {
-    background: #47798C;
+    background: #CC5500;
     background-size: cover;
     padding: 60px 0;
   }
   
   .cta h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
+    padding-top: 50px;
     padding-bottom: 0;
     color: #F0E3D7;
   }
