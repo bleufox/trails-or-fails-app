@@ -316,6 +316,8 @@ body {
   --------------------------------------------------------------*/
   #about {
     background-color: #F0E3D7;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
   
   .about .content h3 {
