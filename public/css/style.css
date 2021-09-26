@@ -301,6 +301,7 @@ body {
   
 .icon-box {
     padding-top: 50px;
+    padding-bottom: 25px;
     width: 500px;
     position: relative;
     overflow: hidden;
