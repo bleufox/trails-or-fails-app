@@ -295,19 +295,20 @@ body {
     background: #D2AC89;
   }
   
-  #hero .icon-boxes {
+.icon-boxes {
     margin-top: 100px;  
   }
   
-  #hero .icon-box {
-    padding: 15px 15px;
+.icon-box {
+    padding-top: 50px;
+    width: 500px;
     position: relative;
     overflow: hidden;
     background: #F0E3D7;
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     z-index: 1;
-    border: 1px solid #333333;
+    border: 1px solid #8888888;
     opacity: .85;
   }
   
