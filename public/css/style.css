@@ -338,8 +338,7 @@ body {
   }
 
   .results-list {
-    /* height: 750px; */
-    width: auto;
+    width: 750px;
     font-size: 15px;
     color: #F0E3D7;
     margin: 0 auto;
