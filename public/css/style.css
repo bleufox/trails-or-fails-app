@@ -26,6 +26,10 @@ body {
   h1, h2, h3, h5, h6 {
     font-family: "Raleway", sans-serif;
   }
+
+  h3 {
+    color: #F0E3D7;
+  }
   
   #trail-info h4 {
     font-family: "Raleway", sans-serif;
@@ -196,6 +200,15 @@ body {
     z-index: 1;
   }
 
+  .icon-box-results {
+    position: relative;
+    overflow: hidden;
+    background: #CC5500;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+  }
+
+
   #icon-box {
     color: #F0E3D7;
   }
@@ -294,6 +307,37 @@ body {
   }
   
   /*--------------------------------------------------------------
+  # Search Results
+  --------------------------------------------------------------*/
+
+  .results-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .results-title h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #F0E3D7;
+  }
+  
+  .results-title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #F0E3D7;
+  }
+
+  .results {
+    background: #CC5500;
+    height: 250px;
+    font-size: 14px;
+    color: #444444;
+  }
+
+  /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
   #about {
@@ -325,6 +369,7 @@ body {
     font-size: 14px;
     color: #444444;
   }
+
 
   /*--------------------------------------------------------------
   # Footer

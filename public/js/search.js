@@ -1,7 +1,6 @@
 const city = document.getElementById("cityInput")
 const searchBtn = document.getElementById('searchBtn');
 
-
 //get trails by location
 function citySearch() {
     const cityData = document.querySelector('#city-select').value;
@@ -81,3 +80,6 @@ function getRatings(ratings) {
         return starPercentageRounded;
     }
 }
+
+let clearResults = document.createElement('ul');
+
